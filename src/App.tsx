@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <h3>React Context API</h3>
-      <h4>Pull these changes please</h4>
       <React.StrictMode>
         <AppStateProvider>
           <ComponentWrapper>
