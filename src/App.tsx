@@ -5,6 +5,7 @@ import { ComponentOne, ComponentTwo, ComponentWrapper } from "./components";
 function App() {
   return (
     <>
+      <h3>React Context API</h3>
       <React.StrictMode>
         <AppStateProvider>
           <ComponentWrapper>
