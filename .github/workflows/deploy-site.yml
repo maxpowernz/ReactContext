@@ -24,19 +24,13 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Set Azure Account
-        uses: azure/CLI@v1
-        with:
-          azcliversion: 2.30.0
-          inlineScript: |
-
       - name: Upload to Azure blob storage
         uses: azure/CLI@v1
         with:
           azcliversion: 2.30.0
           inlineScript: |
             az account set --subscription 4010cc9d-d244-4b8a-bedf-97621bfbec4f
-            az storage blob upload-batch --account-name reactblobstoragesp.aaronguilfordoutlook.onmicrosoft.com -d '$web' -s ./production-files
+            az storage blob upload-batch --account-name agreactstorage -d '$web' -s ./production-files
 
       - name: Azure logout
         run: |
