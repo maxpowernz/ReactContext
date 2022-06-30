@@ -17,7 +17,7 @@ export function ComponentOne() {
 
   return (
     <>
-      <h2>Component One</h2>
+      <h2>Component One --</h2>
       <h4>{state.name}</h4>
       <input type="text" ref={inputRef}></input>
       <button onClick={handleClick}>Click Me</button>
