@@ -29,7 +29,7 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-            az account set 4010cc9d-d244-4b8a-bedf-97621bfbec4f
+            az account set -s 4010cc9d-d244-4b8a-bedf-97621bfbec4f
             az storage blob upload-batch --account-name reactblobstoragesp.aaronguilfordoutlook.onmicrosoft.com -d '$web' -s ./production-files
 
       - name: Azure logout
